@@ -2,9 +2,9 @@
 
 ## Links 
 **Documentation**: https://docs.sxssy.xyz (is slighlty different, but most of the code is explained and used here!) <br>
-**Inspired by**: https://youtube.com/channel/mrJAwesomeyt
-**Main Discord Server**: https://discord.gg/toowake
-**New Discord Server**: https://discord.gg/wQ3JHxkAzd
+**Inspired by**: https://youtube.com/channel/mrJAwesomeyt <br>
+**Main Discord Server**: https://discord.gg/toowake <br>
+**New Discord Server**: https://discord.gg/wQ3JHxkAzd 
 
 ## Features
 - **Easy Command Handling**: Create commands with ease using the `commands` folder.
