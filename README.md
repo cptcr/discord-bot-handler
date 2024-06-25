@@ -11,7 +11,6 @@
 - **Interaction Logs**: Automatically logs every interaction in the `logs` folder by creating txt files.
 - **Developer Only Commands**: Create commands only for developers.
 - **Token generator**: Purpose? I dont know. I just added it. You can use it to generate a token for several things.
-- **Shard Manager**: Dont know how sharding works? You dont need to.
 - **Express Handler**: Handle your express sites easily in the `express` folder.
 - **Component Handler**: Handle components easily.
 - **Error Handling**: The error will be shown in the console, but your discord bot wont shutdown.
