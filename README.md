@@ -18,7 +18,7 @@
 - **Support for Slash Commands**: Supports slash commands with the `@discordjs/rest` package.
 - **Support for Developer Guild only commands**: Creates commands only visible in the developer guild. Folder: `src/dev`
 - **Support for Custom Commands**: Create custom commands within every server. Includes a check if the command exists in the bot or the server. Folder: `src/custom-commands`
-- **Multiple Databases Supported**: Choose your database in `database.config.json` and fill out the required information to connect. (MariaDB, MongoDB, Postgres, Redis, SLQITE)
+- **Multiple Databases Supported**: Choose your database in `database.config.json` and fill out the required information to connect. (MariaDB, MongoDB, Postgres, Redis, SQLITE)
 - **Shard Manager**: Automatically adds sharding system to your discord bot.
 - **Autocomplete Support**: Want to use autocomplete? We added the backend logic for it.
 - **TypeScript Support**: Supports JavaScript and TypeScript!
