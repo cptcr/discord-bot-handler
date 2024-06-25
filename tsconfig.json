@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es6",                  // Set to an ECMAScript version to support modern JavaScript features.
+      "module": "commonjs",             // Suitable for Node.js applications.
+      "outDir": "./dist",               // Redirect output structure to the directory.
+      "rootDir": "./",               // Specify the root directory of input files.
+      "strict": true,                   // Enable all strict type-checking options.
+      "esModuleInterop": true,          // Enables compatibility with default imports from modules.
+      "skipLibCheck": true,             // Skip type checking of default libraries.
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,        // Allow importing .json files
+      "allowJs": true,                  // Allow JavaScript files to be compiled.
+      "noImplicitAny": true             // Raise error on expressions and declarations with an implied 'any' type.
+    },
+    "include": [
+      "src/**/*"                        // Files to include in the compilation.
+    ],
+    "exclude": [
+      "node_modules",                   // Exclude node_modules from the compilation.
+      "**/*.test.ts"                    // Exclude test files.
+    ]
+}

@@ -40,15 +40,15 @@ const client = new Client({
 }); 
 
 process.on('unhandledRejection', (reason, promise) => {
-    console.error("Unhandled Rejection at:", promise, "reason:", reason);
+    console.error("[ ERROR ] Unhandled Rejection at:", promise, "reason:", reason);
 });
   
 process.on('uncaughtException', (err) => {
-    console.error("Uncaught Exception:", err);
+    console.error("[ ERROR ] Uncaught Exception:", err);
 });
   
 process.on('uncaughtExceptionMonitor', (err, origin) => {
-    console.error("Uncaught Exception Monitor:", err, "Origin:", origin);
+    console.error("[ ERROR ] Uncaught Exception Monitor:", err, "Origin:", origin);
 });
 
 client.setMaxListeners(99999999999);
@@ -63,6 +63,8 @@ require('dotenv').config();
 const functions = fs.readdirSync("./src/functions").filter(file => file.endsWith(".js"));
 const eventFiles = fs.readdirSync("./src/events").filter(file => file.endsWith(".js"));
 const commandFolders = fs.readdirSync("./src/commands");
+const devCommandFolders = fs.readdirSync("./src/dev");
+const customCommandFolders = fs.readdirSync("./src/custom-commands");
 
 (async () => {
     for (file of functions) {
@@ -70,6 +72,8 @@ const commandFolders = fs.readdirSync("./src/commands");
     }
     client.handleEvents(eventFiles, "./src/events");
     client.handleCommands(commandFolders, "./src/commands");
+    client.handleDevCommands(devCommandFolders, "./src/dev");
+    client.handleGuildCommands("./src/custom-commands");
     client.login(process.env.TOKEN.toString())
 })();
 
@@ -77,14 +81,13 @@ const commandFolders = fs.readdirSync("./src/commands");
 fs.readdirSync('./src/Event Handler').forEach((dir) => {
     fs.readdirSync(`./src/Event Handler/${dir}`).forEach((handler) => {
         require(`./Event Handler/${dir}/${handler}`)(client);
-        eCount++
         getEventsStatus = true
     }); 
 });
 
 //Writing all interactions
 client.on(Events.InteractionCreate, async (interaction) => {
-    const logged = lib.writeLogs(interaction.toString())
+    const logged = lib.writeLogs
 
     const channel = client.channels.fetch(process.env.DEVCHANNEL.toString());
 
@@ -143,7 +146,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
     }
 });
 
-lib.connectToMongoDB(process.env.MONGODBURI);
+//lib.connectToMongoDB(process.env.MONGODBURI);
 lib.handleExpress();
 lib.getSystemInfo();
 lib.shardManager(process.env.SHARDS, process.env.TOKEN);

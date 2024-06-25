@@ -2,10 +2,17 @@ module.exports = {
     name: 'ready',
     once: true,
     async execute(client) {
-        console.log('Ready!');
+        console.log('[ CLIENT ] Ready to use!');
 
         async function pickPresence () {
             const option = Math.floor(Math.random() * statusArray.length);
+
+            const statusArray = [
+                {
+                    content: "Test",
+                    type: "PLAYING"
+                }
+            ]
 
             try {
                 await client.user.setPresence({

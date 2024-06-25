@@ -1,0 +1,46 @@
+{
+  "name": "handler-project",
+  "version": "1.0.0",
+  "description": "**Documentation**: https://docs.sxssy.xyz (is slighlty different, but most of the code is explained and used here!) <br>\r **Inspired by**: https://youtube.com/channel/mrJAwesomeyt",
+  "main": "src/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toowake/discord-bot-handler.git"
+  },
+  "keywords": [
+    "toowake",
+    "nexus",
+    "database",
+    "sql",
+    "mongodb",
+    "postgres",
+    "mariadb",
+    "redis",
+    "sqlite",
+    "discord-bot",
+    "handler"
+  ],
+  "author": "toowake",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/toowake/discord-bot-handler/issues"
+  },
+  "homepage": "https://github.com/toowake/discord-bot-handler#readme",
+  "dependencies": {
+    "mysql2": "^3.10.1",
+    "pg": "^8.12.0",
+    "redis": "^4.6.14",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}

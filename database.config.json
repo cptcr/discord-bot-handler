@@ -1,0 +1,23 @@
+{
+    "database": {
+        "type": "Specify the type from the available db systems below",
+        "mariadb": {
+            "host": "your_host",
+            "user": "your_user",
+            "password": "your_password",
+            "database": "your_db"
+        },
+        "mongodb": {
+            "uri": "your_mongodb_uri"
+        },
+        "sqlite": {
+            "path": "your_db_path.db"
+        },
+        "redis": {
+            "uri": "redis://default:@localhost:6379"
+        },
+        "postgres": {
+            "connectionString": "postgres://user:password@localhost:5432/your_db"
+        }
+    }
+}

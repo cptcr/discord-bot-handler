@@ -15,7 +15,12 @@ module.exports = {
                     content: "Sorry, this command is for developers only!",
                     ephemeral: true
                 })
-            } else {
+            } else if (interaction.guild.id === process.env.DEVGUILDID && !process.env.DEVELOEPRS.includes(interaction.user.id)) {
+                return await interaction.reply({
+                    content: "Sorry, this command is meant to be used by developers of this Discord Bot and in their Developer Guild only!",
+                    ephemeral: true
+                })
+            }else {
                 command.execute(interaction, client)
             }
         } catch (error) {
