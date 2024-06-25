@@ -22,7 +22,7 @@
 - **Multiple Databases Supported**: Choose your database in `database.config.json` and fill out the required information to connect. (MariaDB, MongoDB, Postgres, Redis, SLQITE)
 - **Shard Manager**: Automatically adds sharding system to your discord bot.
 - **Autocomplete Support**: Want to use autocomplete? We added the backend logic for it.
-= **TypeScript Support**: Supports JavaScript and TypeScript!
+- **TypeScript Support**: Supports JavaScript and TypeScript!
 
 ## The .env File
 ```js
