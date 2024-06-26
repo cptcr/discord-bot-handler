@@ -53,7 +53,7 @@ This advanced Discord.js Bot/Client Handler simplifies the development of robust
 
 ## Configuration Details (.env File)
 
-\`\`\`plaintext
+```js
 TOKEN= //Your Discord Bot Token
 ID= //Your Discord Client/Bot ID
 SHARDS= //Number of shards to deploy
@@ -62,7 +62,7 @@ PORT= //Port for the Express server (default provided if left empty)
 DEVELOPERS= ["USERID"] //Array of developer Discord user IDs
 DEVCHANNEL= //Channel ID for sending logs
 DEVGUILDID= "1254387341100060684" //Guild ID for deploying developer-only commands
-\`\`\`
+```
 
 ## Setup Instructions
 
