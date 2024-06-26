@@ -20,7 +20,7 @@ module.exports = {
                     content: "Sorry, this command is meant to be used by developers of this Discord Bot and in their Developer Guild only!",
                     ephemeral: true
                 })
-            }else {
+            } else {
                 command.execute(interaction, client)
             }
         } catch (error) {
