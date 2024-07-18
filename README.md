@@ -4,7 +4,7 @@ This advanced Discord.js Bot/Client Handler simplifies the development of robust
 
 ## Documentation and Inspiration
 
-- **Documentation**: Visit our [comprehensive documentation](https://docs.sxssy.xyz) for detailed guidance on implementing and customizing the bot. The documentation might differ slightly but remains a reliable resource for most code implementations.
+- **Documentation**: Visit our [comprehensive documentation](https://docs.cptcr.cc) for detailed guidance on implementing and customizing the bot. The documentation might differ slightly but remains a reliable resource for most code implementations.
 - **Inspiration**: This project is inspired by content from [MrJAwesome's YouTube channel](https://youtube.com/channel/mrJAwesomeyt), which provides valuable insights into Discord bot development.
 
 ## Requirements
@@ -115,9 +115,9 @@ Choosing between discord.js and a framework like Sapphire depends on the specifi
 
 ## Quick Docs
 
-- **Autocomplete Setup**: [https://docs.sxssy.xyz/commands/autocomplete](https://docs.sxssy.xyz/commands/autocomplete)
-- **Creating Commands**: [https://docs.sxssy.xyz/commands/creating-commands](https://docs.sxssy.xyz/commands/creating-commands)
-- **Creating Developer Commands**: [https://docs.sxssy.xyz/commands/creating-developer-commands](https://docs.sxssy.xyz/commands/creating-developer-commands)
-- **Creating Custom Bot Functions**: [https://docs.sxssy.xyz/building-the-bot/custom-bot-functions](https://docs.sxssy.xyz/building-the-bot/custom-bot-functions)
-- **Database Integration `MongoDB`**: [https://docs.sxssy.xyz/database/mongodb-connection](https://docs.sxssy.xyz/database/mongodb-connection)
-- **User Installed Commands**: [https://docs.sxssy.xyz/commands/creating-user-installed-commands](https://docs.sxssy.xyz/commands/creating-user-installed-commands)
+- **Autocomplete Setup**: [https://docs.sxssy.xyz/commands/autocomplete](https://docs.cptcr.cc/commands/autocomplete)
+- **Creating Commands**: [https://docs.sxssy.xyz/commands/creating-commands](https://docs.cptcr.cc/commands/creating-commands)
+- **Creating Developer Commands**: [https://docs.sxssy.xyz/commands/creating-developer-commands](https://docs.cptcr.cc/commands/creating-developer-commands)
+- **Creating Custom Bot Functions**: [https://docs.sxssy.xyz/building-the-bot/custom-bot-functions](https://docs.cptcr.cc/building-the-bot/custom-bot-functions)
+- **Database Integration `MongoDB`**: [https://docs.sxssy.xyz/database/mongodb-connection](https://docs.cptcr.cc/database/mongodb-connection)
+- **User Installed Commands**: [https://docs.sxssy.xyz/commands/creating-user-installed-commands](https://docs.cptcr.cc/commands/creating-user-installed-commands)
