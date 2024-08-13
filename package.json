@@ -7,7 +7,15 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node .",
+    "nexus": "node .",
+    "reset": "node scripts/resetCommands.js",
+    "fetch": "node scripts/getCommands.js",
+    "client": "node scripts/getClientInfo.js",
+    "nodemon": "npm install nodemon && nodemon .",
+    "update": "npm update",
+    "db": "node scripts/database.js",
+    "cleardb": "node scripts/beta.js"
   },
   "repository": {
     "type": "git",
